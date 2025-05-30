@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teufelsberg Hiking Guide</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-mountain"></i>
+                <h1>Teufelsberg Hiking Guide</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#map-section">Map</a></li>
+                    <li><a href="#route-details">Route Details</a></li>
+                    <li><a href="#guidelines">Guidelines</a></li>
+                    <li><a href="#emergency">Emergency</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Explore the Beautiful Teufelsberg Trail</h2>
+                <p>A 10.8 km hiking adventure with stunning views and natural beauty</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <i class="fas fa-clock"></i>
+                        <span>02:56</span>
+                        <p>Duration</p>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-route"></i>
+                        <span>10.8 km</span>
+                        <p>Distance</p>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <span>3.7 km/h</span>
+                        <p>Avg. Speed</p>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-mountain"></i>
+                        <span>140 m</span>
+                        <p>Elevation</p>
+                    </div>
+                </div>
+                <a href="#map-section" class="btn">Start Exploring</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="map-section" class="map-section">
+        <div class="container">
+            <h2>Interactive Trail Map</h2>
+            <p>Click on any point to see details about that section of the trail</p>
+            <div id="map"></div>
+        </div>
+    </section>
+
+    <section id="route-details" class="route-details">
+        <div class="container">
+            <h2>Route Details</h2>
+            <p>Step-by-step guide for your hiking adventure</p>
+            <div class="route-points" id="route-points">
+                <!-- Route points will be dynamically inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <section id="guidelines" class="guidelines">
+        <div class="container">
+            <h2>Hiking Guidelines</h2>
+            <div class="guidelines-content">
+                <div class="guideline-card">
+                    <div class="icon">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h3>What to Wear</h3>
+                    <ul>
+                        <li>Comfortable hiking boots or trail shoes</li>
+                        <li>Moisture-wicking clothing</li>
+                        <li>Weather-appropriate layers</li>
+                        <li>Hat and sunglasses</li>
+                        <li>Rain gear (check forecast)</li>
+                    </ul>
+                </div>
+                <div class="guideline-card">
+                    <div class="icon">
+                        <i class="fas fa-backpack"></i>
+                    </div>
+                    <h3>What to Bring</h3>
+                    <ul>
+                        <li>Backpack (15-20L)</li>
+                        <li>Water (min. 1.5 liters)</li>
+                        <li>Snacks and lunch</li>
+                        <li>Navigation tools (map, compass, GPS)</li>
+                        <li>First aid kit</li>
+                        <li>Mobile phone (fully charged)</li>
+                    </ul>
+                </div>
+                <div class="guideline-card">
+                    <div class="icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3>Safety Tips</h3>
+                    <ul>
+                        <li>Check weather forecast before departure</li>
+                        <li>Inform someone about your route and ETA</li>
+                        <li>Stay on marked trails</li>
+                        <li>Respect wildlife and nature</li>
+                        <li>Carry emergency contacts</li>
+                        <li>Start early to finish before dark</li>
+                    </ul>
+                </div>
+                <div class="guideline-card">
+                    <div class="icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Environmental Ethics</h3>
+                    <ul>
+                        <li>Leave no trace - pack out all trash</li>
+                        <li>Stay on designated trails</li>
+                        <li>Respect wildlife - observe from distance</li>
+                        <li>No picking plants or disturbing habitats</li>
+                        <li>Use biodegradable products</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="emergency" class="emergency">
+        <div class="container">
+            <h2>Emergency Information</h2>
+            <div class="emergency-content">
+                <div class="emergency-card">
+                    <div class="icon emergency-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Emergency Contacts</h3>
+                    <ul>
+                        <li><strong>Emergency Services:</strong> 112</li>
+                        <li><strong>Police:</strong> 110</li>
+                        <li><strong>Mountain Rescue:</strong> +49 30 123456</li>
+                        <li><strong>Nearest Hospital:</strong> Charité - Universitätsmedizin Berlin</li>
+                        <li><strong>Park Rangers:</strong> +49 30 654321</li>
+                    </ul>
+                </div>
+                <div class="emergency-card">
+                    <div class="icon emergency-icon">
+                        <i class="fas fa-first-aid"></i>
+                    </div>
+                    <h3>First Aid Tips</h3>
+                    <ul>
+                        <li>For minor injuries, use your first aid kit</li>
+                        <li>Stay calm and assess the situation</li>
+                        <li>If serious, call emergency services (112)</li>
+                        <li>Share your exact location (use map coordinates)</li>
+                        <li>If lost, stay where you are and call for help</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How difficult is this hiking trail?</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The Teufelsberg trail is considered moderate difficulty. With a total distance of 10.8 km and an elevation gain of 140 m, it's suitable for hikers with basic experience and reasonable fitness levels.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How long does it take to complete the hike?</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The average completion time is approximately 2 hours and 56 minutes at a pace of 3.7 km/h. However, this can vary depending on your hiking speed, rest breaks, and time spent enjoying viewpoints.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is the trail well-marked?</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, the trail is generally well-marked with signs and waypoints. However, we recommend using this interactive guide and possibly downloading the offline map for additional navigation security.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Are there water sources along the trail?</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>There are limited water sources along the trail. It's recommended to bring at least 1.5 liters of water per person, especially during warmer months.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is the trail suitable for children?</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The trail can be suitable for children with hiking experience, but consider the full length (10.8 km) might be challenging for younger children. There are some shorter segments that could be more appropriate for families with kids.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is the best time of year to hike this trail?</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The trail is accessible year-round, but the most pleasant conditions are typically from late spring to early autumn (May to October). Winter hiking is possible but requires appropriate gear and caution for potentially icy conditions.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Are dogs allowed on the trail?</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, dogs are generally allowed but should be kept on a leash to protect wildlife and other hikers. Remember to bring water for your dog and bags to clean up after them.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-mountain"></i>
+                    <h2>Teufelsberg Hiking Guide</h2>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#map-section">Map</a></li>
+                        <li><a href="#route-details">Route Details</a></li>
+                        <li><a href="#guidelines">Guidelines</a></li>
+                        <li><a href="#emergency">Emergency</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-envelope"></i> info@teufelsberghike.com</p>
+                    <p><i class="fas fa-phone"></i> +49 30 987654321</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Teufelsberg Hiking Guide. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/map.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
