@@ -191,7 +191,7 @@ nav ul li a:hover:after {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('../images/teufelsberg_map.png');
+    background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('../images/teufelsberg_tower.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -563,7 +563,21 @@ footer {
 .footer-bottom p {
     color: var(--white);
     opacity: 0.6;
-    margin-bottom: 0;
+    margin-bottom: 0.5rem;
+}
+
+.image-attribution {
+    font-size: 0.9rem;
+}
+
+.image-attribution a {
+    color: var(--white);
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+.image-attribution a:hover {
+    opacity: 1;
 }
 
 /* Responsive Styles */

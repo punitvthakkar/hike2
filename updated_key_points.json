@@ -1,0 +1,116 @@
+[
+  {
+    "id": 1,
+    "lat": 52.511259,
+    "lon": 13.24283,
+    "elevation": 64.024964
+  },
+  {
+    "id": 2,
+    "lat": 52.511259,
+    "lon": 13.24283,
+    "elevation": 64.024964,
+    "description": "Left and follow Path.",
+    "distance": 11.0,
+    "overall_distance": 148.0
+  },
+  {
+    "id": 3,
+    "lat": 52.511259,
+    "lon": 13.24283,
+    "elevation": 64.024964,
+    "description": "Left and follow Path.",
+    "distance": 380.0,
+    "overall_distance": 528.0
+  },
+  {
+    "id": 4,
+    "lat": 52.500781,
+    "lon": 13.245393,
+    "elevation": 68.134511,
+    "description": "Right and follow Path.",
+    "distance": 24.0,
+    "overall_distance": 553.0
+  },
+  {
+    "id": 5,
+    "lat": 52.500781,
+    "lon": 13.245393,
+    "elevation": 68.134511,
+    "description": "Left on Flatowallee.",
+    "distance": 52.0,
+    "overall_distance": 606.0
+  },
+  {
+    "id": 6,
+    "lat": 52.500781,
+    "lon": 13.245393,
+    "elevation": 68.134511,
+    "description": "Slight right on Kranzallee.",
+    "distance": 6.0,
+    "overall_distance": 612.0
+  },
+  {
+    "id": 7,
+    "lat": 52.506563,
+    "lon": 13.242978,
+    "elevation": 53.048004,
+    "description": "Left on Path.",
+    "distance": 13.0,
+    "overall_distance": 625.0
+  },
+  {
+    "id": 8,
+    "lat": 52.507104,
+    "lon": 13.242041,
+    "elevation": 56.601628,
+    "description": "Right and follow Path.",
+    "distance": 121.0,
+    "overall_distance": 747.0
+  },
+  {
+    "id": 9,
+    "lat": 52.508504,
+    "lon": 13.241509,
+    "elevation": 59.967731,
+    "description": "Right and follow Path.",
+    "distance": 290.0,
+    "overall_distance": 1040.0
+  },
+  {
+    "id": 10,
+    "lat": 52.510617,
+    "lon": 13.240684,
+    "elevation": 63.697342,
+    "description": "Left and follow Path.",
+    "distance": 6.0,
+    "overall_distance": 1040.0
+  },
+  {
+    "id": 11,
+    "lat": 52.511259,
+    "lon": 13.24283,
+    "elevation": 64.024964,
+    "description": "Right and follow Path.",
+    "distance": 23.0,
+    "overall_distance": 1070.0
+  },
+  {
+    "id": 12,
+    "lat": 52.511259,
+    "lon": 13.24283,
+    "elevation": 64.024964,
+    "description": "Left and follow Hiking Path (SAC T1).",
+    "distance": 124.0,
+    "overall_distance": 1190.0
+  },
+  {
+    "id": 13,
+    "lat": 52.511259,
+    "lon": 13.24283,
+    "elevation": 64.024964,
+    "description": "Slight right and follow Hiking Path (SAC T1).",
+    "distance": 54.0,
+    "overall_distance": 1250.0
+  }
+]
